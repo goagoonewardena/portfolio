@@ -1,15 +1,34 @@
 export const projects = [
   {
     id: 1,
-    title: "Career Compass",
-    description: "Full-stack online shopping application with real-time inventory management, secure payment, and more.",
-    image: "/images/projects/project3.png",
+    title: "Career Pilot",
+    description: "Full-stack career guidance AI-powered platform with \personalized career guidance, job role predictions and career resources.",
+    image: "/images/projects/project1.png",
     category: "Full Stack",
-    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-    metrics: "40% increase in conversion",
-    demoUrl: "https://timetoprogram.com/projects",
-    githubUrl: "https://github.com",
+    technologies: ["React", "Tailwind CSS", "Node.js", "MongoDB", "Ballerina", "Python", "Auth0"],
+    metrics: "500+ personalized job predictions delivered",
+    githubUrl: "https://github.com/sigallage/iwb25-120-thestackmasters",
+  },
+  {
+    id: 2,
+    title: "Ceylon Roam",
+    description: "Full-stack travel planning AI mobile application with Route Optimizer, Itinerary Generator and real-time voice translation",
+    image: "/images/projects/project2.png",
+    category: "Full Stack",
+    technologies: ["React", "Node.js", "MongoDB", "TailWind CSS"],
+    metrics: "1,500+ destinations covered",
+    githubUrl: "https://github.com/sigallage/CeylonRoam",
+  },
+  {
+    id: 3,
+    title: "Traffic-Analysis System",
+    description: "Traffic analysis System with real-time data processing, visualization, and reporting.",
+    image: "/images/projects/project3.png",
+    category: "Data Analysis",
+    technologies: ["python"],
+    metrics: "Processed 1000+ traffic records from CSV datasets.",
+    githubUrl: "https://github.com/goagoonewardena/Traffic-Data-Analysis",
   },
 ];
 
-export const categories = ['All', 'Full Stack', 'Web Apps', 'UI Components'];
+export const categories = ['All', 'Full Stack', 'Data Analysis'];
