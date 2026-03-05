@@ -66,7 +66,8 @@ const Navbar = () => {
               Hire Me
             </button>  
           </div>
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Button */} 
+          
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="md:hidden p-4 text-white hover:text-white/80 transition-colors"
