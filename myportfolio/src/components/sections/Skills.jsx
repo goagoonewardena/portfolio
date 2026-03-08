@@ -30,7 +30,6 @@ const Skills = () => {
                   {skill.name}
                 </div>
                 <div className="text-sm text-primary mb-1">{skill.level}</div>
-                <div className="text-xs text-white/60">{skill.experience}</div>
               </div>
             </FadeIn>
           ))}

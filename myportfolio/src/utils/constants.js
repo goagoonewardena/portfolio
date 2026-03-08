@@ -6,9 +6,7 @@ export const PERSONAL_INFO = {
 	tagLine: 'Passionate about securing networks and defending digital frontiers.',
 	resume: '/Oshadhi_CV (2).pdf',
 	bio: [
-		"I'm a dedicated cybersecurity enthusiast with hands-on experience in network security and threat analysis.",
-		'Skilled in identifying vulnerabilities, implementing security measures, and responding to incidents.',
-		'Driven to stay ahead of cyber threats and help organizations protect their critical assets.',
+		"I'm Oshadhi Goonewardena, a dedicated cybersecurity enthusiast with hands-on experience in network security and threat analysis. Skilled in identifying vulnerabilities, implementing security measures, and responding to incidents. Driven to stay ahead of cyber threats and help organizations protect their critical assets."
 	],
 };
 
@@ -29,8 +27,9 @@ export const ABOUT_STATS = [
 ];
 
 export const NAV_LINKS = [
-	{ id: 'about', label: "About"},
+	{ id: 'home', label: "Home" },
+	{ id: 'about', label: "About" },
 	{ id: 'skills', label: "Skills" },
 	{ id: 'projects', label: "Projects" },
-	{ id: 'contact', label: "Contact"},
+	{ id: 'certifications', label: "Certifications" },
 ];

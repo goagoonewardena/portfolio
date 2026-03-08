@@ -8,7 +8,7 @@ import RadialGradientBackground from '../backgrounds/RadialGradientBackground';
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-black">
+    <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-black">
       {/* Security-themed background: green radial + network grid overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute -top-32 -left-32 w-[600px] h-[600px] bg-green-400/10 rounded-full blur-3xl" />
@@ -52,7 +52,7 @@ const Hero = () => {
               </div>
             </FadeIn>
             <FadeIn delay={300}>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 mb-12 max-w-2xl">
+              <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-12 mb-12 max-w-2xl">
                 <div className="text-center">
                   <div className="text-3xl font-extrabold" style={{ color: '#8DFF69' }}>200+</div>
                   <div className="text-lg text-white font-semibold">Code Commits</div>
@@ -72,12 +72,19 @@ const Hero = () => {
           {/* Right Column - Image */}
           <FadeIn delay={200}>
             <div className="relative flex flex-col items-center">
-              <div className="relative overflow-hidden rounded-full w-80 h-80 border-2 border-green-400 shadow-xl bg-black/80" style={{ boxShadow: '0 0 32px 4px #8DFF69, 0 0 64px 8px #19391a' }}>
-                <img
-                  src="/gethmi.jpg"
-                  alt="Developer at work"
-                  className="w-full h-full object-cover"
-                />
+              <div className="relative flex items-center justify-center group">
+                {/* Responsive, interactive border and glow */}
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                  <div className="w-full h-full rounded-[2.5rem] transition-all duration-500 group-hover:scale-105 group-hover:shadow-[0_0_32px_8px_#8DFF69] shadow-[0_0_16px_4px_#8DFF6933] border-2 border-green-400/80" style={{ borderRadius: '2.5rem' }} />
+                </div>
+                <div className="relative overflow-hidden rounded-[2.5rem] w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 bg-black/80 z-10 transition-all duration-500 group-hover:shadow-[0_0_32px_8px_#8DFF69]" style={{ borderRadius: '2.5rem', border: '2px solid #8DFF69', boxShadow: '0 0 12px 2px #8DFF6922' }}>
+                  <img
+                    src="/gethmi.jpg"
+                    alt="Developer at work"
+                    className="w-full h-full object-cover rounded-[2.5rem]"
+                    style={{ borderRadius: '2.5rem' }}
+                  />
+                </div>
               </div>
               {/* Technology Logos*/}
               <div className="flex items-center gap-12 bg-black/60 backdrop-blur-sm border border-green-400/20 rounded-full px-6 py-3 mt-8">
