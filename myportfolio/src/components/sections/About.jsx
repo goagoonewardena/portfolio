@@ -1,6 +1,7 @@
 
 import { PERSONAL_INFO, ABOUT_STATS } from '../../utils/constants';
 import FadeIn from '../animations/FadeIn';
+import AnimatedProgressBar from '../ui/AnimatedProgressBar';
 
 const About = () => {
     return (
@@ -25,13 +26,8 @@ const About = () => {
                                                 <div className="text-base text-white/80">BSc (Hons) in Computer Science</div>
                                                 <div className="text-sm text-white/60 mt-1">2024 - Present</div>
                                             </div>
-                                            {/* Progress Bar */}
-                                            <div className="w-full h-1.5 bg-[#2e3842] rounded-full mt-4">
-                                                <div
-                                                    className="h-1.5 rounded-full bg-emerald-400 transition-all"
-                                                    style={{ width: '70%' }}
-                                                />
-                                            </div>
+                                            {/* Animated Progress Bar */}
+                                            <AnimatedProgressBar percent={70} duration={1200} />
                                         </div>
                                         {/* Education Card 2 */}
                                         <div className="bg-black/70 border border-green-400/40 rounded-3xl p-6 shadow-[0_0_24px_2px_#8DFF69] h-[260px] w-[320px] flex flex-col justify-between">
@@ -40,13 +36,8 @@ const About = () => {
                                                 <div className="text-base text-white/80">A/L's Biological Science Stream</div>
                                                 <div className="text-sm text-white/60 mt-1">2009 - 2022</div>
                                             </div>
-                                            {/* Progress Bar */}
-                                            <div className="w-full h-1.5 bg-[#2e3842] rounded-full mt-4">
-                                                <div
-                                                    className="h-1.5 rounded-full bg-emerald-400 transition-all"
-                                                    style={{ width: '100%' }}
-                                                />
-                                            </div>
+                                            {/* Animated Progress Bar */}
+                                            <AnimatedProgressBar percent={100} duration={1200} />
                                         </div>
                                            {/* Education Card 3 */}
                                            <div className="bg-black/70 border border-green-400/40 rounded-3xl p-6 shadow-[0_0_24px_2px_#8DFF69] h-[260px] w-[320px] flex flex-col justify-between">
@@ -55,13 +46,8 @@ const About = () => {
                                                    <div className="text-base text-white/80">Diploma in Information Technology</div>
                                                    <div className="text-sm text-white/60 mt-1">2024 - 2025</div>
                                                </div>
-                                               {/* Progress Bar */}
-                                               <div className="w-full h-1.5 bg-[#2e3842] rounded-full mt-4">
-                                                   <div
-                                                       className="h-1.5 rounded-full bg-emerald-400 transition-all"
-                                                       style={{ width: '100%' }}
-                                                   />
-                                               </div>
+                                               {/* Animated Progress Bar */}
+                                               <AnimatedProgressBar percent={100} duration={1200} />
                                            </div>
                                     </div>
                                 </FadeIn>

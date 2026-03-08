@@ -15,7 +15,7 @@ const certifications = [
     title: 'Networking Basics',
     issuer: 'Cisco',
     date: '2025',
-    image: '/images/certifications/ccna.png',
+    image: '/images/certifications/Cisco.png',
   },
   {
     id: 3,
@@ -57,13 +57,13 @@ const Certifications = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {certifications.map(cert => (
             <FadeIn key={cert.id} delay={cert.id * 100}>
-              <div className="bg-white/5 border border-primary/20 rounded-xl p-6 text-white flex flex-col h-full">
+              <div className="bg-white/5 border border-primary/20 rounded-xl p-4 text-white flex flex-col items-center">
                 {cert.image && (
-                  <img src={cert.image} alt={cert.title + ' badge'} className="rounded-lg mb-4 w-full h-48 object-contain bg-black/20" />
+                  <img src={cert.image} alt={cert.title + ' badge'} className="rounded-lg mb-4 w-full object-contain" style={{ maxHeight: '220px' }} />
                 )}
-                <h3 className="text-xl font-semibold mb-2 text-primary">{cert.title}</h3>
-                <div className="text-white/80 mb-1">{cert.issuer}</div>
-                <div className="text-xs text-white/60 mb-2">Issued: {cert.date}</div>
+                <h3 className="text-xl font-semibold mb-2 text-primary text-center">{cert.title}</h3>
+                <div className="text-white/80 mb-1 text-center">{cert.issuer}</div>
+                <div className="text-xs text-white/60 mb-2 text-center">Issued: {cert.date}</div>
               </div>
             </FadeIn>
           ))}

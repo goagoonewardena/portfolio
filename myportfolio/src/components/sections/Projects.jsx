@@ -12,7 +12,7 @@ const Projects = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map(project => (
             <FadeIn key={project.id} delay={project.id * 100}>
-              <div className="bg-white/5 border border-primary/20 rounded-xl p-6 text-white flex flex-col h-full">
+              <div className="bg-white/5 border border-primary/20 rounded-xl p-6 text-white flex flex-col h-full transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:border-primary">
                 <img src={project.image} alt={project.title} className="rounded-lg mb-4 w-full h-48 object-cover bg-black/20" />
                 <h3 className="text-xl font-semibold mb-2 text-primary">{project.title}</h3>
                 <p className="text-white/80 mb-2 flex-1">{project.description}</p>
