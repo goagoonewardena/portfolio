@@ -1,6 +1,13 @@
 import React from 'react';
 
-const RadialGradientBackground = () => {
+const RadialGradientBackground = ({ variant = 'hero', gradient = [] }) => {
+  const variants = {
+    hero: [
+      
+    
+    ]
+  }
+  
   return (
     <div>RadialGradientBackground</div>
   );
