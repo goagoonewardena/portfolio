@@ -16,32 +16,56 @@ const About = () => {
                         ))}
                     </div>
                 </FadeIn>
-                <FadeIn delay={200}>
-                    <div className="flex flex-wrap gap-8 mb-6">
-                        <div className="bg-white/5 border border-primary/20 rounded-xl p-6 min-w-[180px]">
-                            <div className="text-base text-primary font-semibold mb-1">Name</div>
-                            <div className="text-white">{PERSONAL_INFO.name}</div>
-                        </div>
-                        <div className="bg-white/5 border border-primary/20 rounded-xl p-6 min-w-[180px]">
-                            <div className="text-base text-primary font-semibold mb-1">Location</div>
-                            <div className="text-white">{PERSONAL_INFO.location}</div>
-                        </div>
-                        <div className="bg-white/5 border border-primary/20 rounded-xl p-6 min-w-[180px]">
-                            <div className="text-base text-primary font-semibold mb-1">Email</div>
-                            <div className="text-white">{PERSONAL_INFO.email}</div>
-                        </div>
-                    </div>
-                </FadeIn>
-                <FadeIn delay={300}>
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
-                        {ABOUT_STATS.map((stat, idx) => (
-                            <div key={idx} className="text-center">
-                                <div className="text-2xl font-bold text-primary mb-1">{stat.value}</div>
-                                <div className="text-sm text-white/70">{stat.label}</div>
-                            </div>
-                        ))}
-                    </div>
-                </FadeIn>
+                                <FadeIn delay={200}>
+                                    <div className="flex flex-row gap-10 mb-6 justify-between items-start mt-16">
+                                        {/* Education Card 1 */}
+                                        <div className="bg-black/70 border border-green-400/40 rounded-3xl p-6 shadow-[0_0_24px_2px_#8DFF69] h-[260px] w-[320px] flex flex-col justify-between">
+                                            <div className="mb-2">
+                                                <div className="text-lg font-semibold text-white">Informatics Institute of Technology</div>
+                                                <div className="text-base text-white/80">BSc (Hons) in Computer Science</div>
+                                                <div className="text-sm text-white/60 mt-1">2024 - Present</div>
+                                            </div>
+                                            {/* Progress Bar */}
+                                            <div className="w-full h-1.5 bg-[#2e3842] rounded-full mt-4">
+                                                <div
+                                                    className="h-1.5 rounded-full bg-emerald-400 transition-all"
+                                                    style={{ width: '70%' }}
+                                                />
+                                            </div>
+                                        </div>
+                                        {/* Education Card 2 */}
+                                        <div className="bg-black/70 border border-green-400/40 rounded-3xl p-6 shadow-[0_0_24px_2px_#8DFF69] h-[260px] w-[320px] flex flex-col justify-between">
+                                            <div className="mb-2">
+                                                <div className="text-lg font-semibold text-white">St. Bridget's Convent</div>
+                                                <div className="text-base text-white/80">A/L's Biological Science Stream</div>
+                                                <div className="text-sm text-white/60 mt-1">2009 - 2022</div>
+                                            </div>
+                                            {/* Progress Bar */}
+                                            <div className="w-full h-1.5 bg-[#2e3842] rounded-full mt-4">
+                                                <div
+                                                    className="h-1.5 rounded-full bg-emerald-400 transition-all"
+                                                    style={{ width: '100%' }}
+                                                />
+                                            </div>
+                                        </div>
+                                           {/* Education Card 3 */}
+                                           <div className="bg-black/70 border border-green-400/40 rounded-3xl p-6 shadow-[0_0_24px_2px_#8DFF69] h-[260px] w-[320px] flex flex-col justify-between">
+                                               <div className="mb-2">
+                                                   <div className="text-lg font-semibold text-white">Esoft Metro Campus</div>
+                                                   <div className="text-base text-white/80">Diploma in Information Technology</div>
+                                                   <div className="text-sm text-white/60 mt-1">2024 - 2025</div>
+                                               </div>
+                                               {/* Progress Bar */}
+                                               <div className="w-full h-1.5 bg-[#2e3842] rounded-full mt-4">
+                                                   <div
+                                                       className="h-1.5 rounded-full bg-emerald-400 transition-all"
+                                                       style={{ width: '100%' }}
+                                                   />
+                                               </div>
+                                           </div>
+                                    </div>
+                                </FadeIn>
+                {/* Stats removed as requested */}
             </div>
         </section>
     );

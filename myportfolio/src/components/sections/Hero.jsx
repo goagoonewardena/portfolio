@@ -29,12 +29,12 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Column - Content */}
-          <div className="text-left">
+          <div className="text-left mt-10 md:mt-16">
             <FadeIn delay={0}>
               <div className="inline-flex items-center gap-2.5 px-6 py-2 mb-8 bg-green-400/10 border border-green-400/30 rounded-full">
                 <Star className="w-4 h-4 text-green-300 fill-green-300"/>
                 <span className="text-xs md:text-sm text-green-200 tracking-[1.2px]">
-                  Network Security Intern | Based in Colombo, Sri Lanka
+                  Network Security Intern | Cybersecurity Enthusiast
                 </span>
               </div>
             </FadeIn>
@@ -52,35 +52,22 @@ const Hero = () => {
               </div>
             </FadeIn>
             <FadeIn delay={300}>
-              <button
-                onClick={() => scrollToSection('contact')} 
-                className="inline-flex items-center gap-0 mb-12 group"
-              >
-                <div className="relative z-10 bg-white text-black rounded-xl px-8 py-4 text-lg font-semibold border border-white shadow hover:bg-primary hover:text-black transition-all">
-                  Get in Touch
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-12 mb-12 max-w-2xl">
+                <div className="text-center">
+                  <div className="text-3xl font-extrabold" style={{ color: '#8DFF69' }}>200+</div>
+                  <div className="text-lg text-white font-semibold">Code Commits</div>
                 </div>
-              </button>
-            </FadeIn>
-            <FadeIn delay={400}>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-10 max-w-full">
-                <div className="text-left">
-                  <div className="text-2xl font-bold text-green-300 mb-1 font-mono">3+</div>
-                  <p className="text-sm text-white/80">Years Experience</p>
+                <div className="text-center">
+                  <div className="text-3xl font-extrabold" style={{ color: '#8DFF69' }}>5+</div>
+                  <div className="text-lg text-white font-semibold">Projects Completed</div>
                 </div>
-                <div className="text-left">
-                  <div className="text-2xl font-bold text-green-300 mb-1 font-mono">50+</div>
-                  <p className="text-sm text-white/80">Projects Completed</p>
-                </div>
-                <div className="text-left">
-                  <div className="text-2xl font-bold text-green-300 mb-1 font-mono">15+</div>
-                  <p className="text-sm text-white/80">Technologies</p>
-                </div>
-                <div className="text-left">
-                  <div className="text-2xl font-bold text-green-300 mb-1 font-mono">98%</div>
-                  <p className="text-sm text-white/80">Client Satisfaction</p>
+                <div className="text-center">
+                  <div className="text-3xl font-extrabold" style={{ color: '#8DFF69' }}>15+</div>
+                  <div className="text-lg text-white font-semibold">Technologies</div>
                 </div>
               </div>
             </FadeIn>
+            {/* Stats removed as requested */}
           </div>
           {/* Right Column - Image */}
           <FadeIn delay={200}>
@@ -89,7 +76,7 @@ const Hero = () => {
                 <img
                   src="/gethmi.jpg"
                   alt="Developer at work"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover"
                 />
               </div>
               {/* Technology Logos*/}

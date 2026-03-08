@@ -4,7 +4,7 @@ export const PERSONAL_INFO = {
 	email: 'oshadhigoon@gmail.com',
 	location: 'Colombo, Sri Lanka',
 	tagLine: 'Passionate about securing networks and defending digital frontiers.',
-	resume: '/resume.pdf',
+	resume: '/Oshadhi_CV (2).pdf',
 	bio: [
 		"I'm a dedicated cybersecurity enthusiast with hands-on experience in network security and threat analysis.",
 		'Skilled in identifying vulnerabilities, implementing security measures, and responding to incidents.',
@@ -24,7 +24,8 @@ export const STATS = [
 
 export const ABOUT_STATS = [
 	{ label: "Code Commits", value: '200+' },
-	{ label: "GitHub Stars", value: '500+' },
+	{ label: "Projects Completed", value: '5+' },
+	{ label: "Technologies", value: '15+' },
 ];
 
 export const NAV_LINKS = [

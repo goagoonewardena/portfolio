@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-[1000] w-full py-4 transition-all duration-300 ${isScrolled 
+      className={`fixed top-0 left-0 right-0 z-[1000] w-full py-6 transition-all duration-300 ${isScrolled 
         ? 'bg-black/60 backdrop-blur-lg' 
         : 'bg-transparent'}`}
       style={{ transform: 'translate3d(0, 0, 0)' }}
@@ -48,7 +48,7 @@ const Navbar = () => {
               <button
                 key={link.id}
                 onClick={() => handleNavClick(link.id)}
-                className={`text-base font-medium transition-all duration-300 ${
+                className={`text-lg md:text-xl font-semibold transition-all duration-300 ${
                   activeSection === link.id
                     ? 'text-primary border-b-2 border-primary pb-1'
                     : 'text-white/80 hover:text-primary'
@@ -60,12 +60,13 @@ const Navbar = () => {
           </nav> 
           {/* CTA Button*/}   
           <div className="hidden md:flex items-center gap-2">
-            <button 
-              onClick={() => handleNavClick('contact')}
+            <a
+              href={PERSONAL_INFO.resume}
+              download
               className="px-7 py-2 bg-white text-black font-semibold text-base rounded-xl border border-white shadow hover:bg-primary hover:text-black transition-all duration-300"
             >
-              Hire Me
-            </button>  
+              Download My CV
+            </a>  
           </div>
           {/* Mobile Menu Button */} 
           <button
@@ -94,12 +95,13 @@ const Navbar = () => {
             {link.label}
           </button>
         ))}
-        <button
-          onClick={() => handleNavClick('contact')}
+        <a
+          href={PERSONAL_INFO.resume}
+          download
           className="w-full px-7 py-3 bg-white text-black font-semibold text-base rounded-xl border border-white shadow hover:bg-primary hover:text-black transition-all duration-300 mt-2"
         >
-          Hire Me
-        </button>
+          Download My CV
+        </a>
         </div>
       </div>
     </nav>
