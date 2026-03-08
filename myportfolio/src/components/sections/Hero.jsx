@@ -1,5 +1,5 @@
 
-import { ChevronDown, Star } from 'lucide-react';
+import { ChevronDown, Star, ShieldCheck, Lock, Network, Bug, Terminal, Github, Linkedin, Mail } from 'lucide-react';
 import { SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, SiMongodb } from 'react-icons/si';
 import { PERSONAL_INFO, STATS } from '../../utils/constants';
 import { scrollToSection } from '../../hooks/useScrollSpy';
@@ -9,11 +9,22 @@ import RadialGradientBackground from '../backgrounds/RadialGradientBackground';
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden bg-black">
-      {/* Abstract green radial background */}
+      {/* Security-themed background: green radial + network grid overlay */}
       <div className="absolute inset-0 z-0">
         <div className="absolute -top-32 -left-32 w-[600px] h-[600px] bg-green-400/10 rounded-full blur-3xl" />
         <div className="absolute top-1/2 left-1/2 w-[700px] h-[700px] bg-green-400/20 rounded-full blur-2xl -translate-x-1/2 -translate-y-1/2" />
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-green-400/10 rounded-full blur-2xl" />
+        {/* Subtle network/circuit grid overlay */}
+        <svg className="absolute inset-0 w-full h-full opacity-10" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g stroke="#8DFF69" strokeWidth="0.5">
+            {Array.from({length: 20}).map((_,i) => (
+              <line key={i} x1={i*72} y1="0" x2={i*72} y2="900" />
+            ))}
+            {Array.from({length: 12}).map((_,i) => (
+              <line key={i+20} x1="0" y1={i*75} x2="1440" y2={i*75} />
+            ))}
+          </g>
+        </svg>
       </div>
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -28,14 +39,17 @@ const Hero = () => {
               </div>
             </FadeIn>
             <FadeIn delay={100}>
-              <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+              <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight flex items-center gap-4 flex-wrap">
+                <ShieldCheck className="w-12 h-12 text-green-300 inline-block" />
                 Network Security Intern<br />Portfolio
               </h1>
             </FadeIn>
-            <FadeIn delay={200}>
-              <p className="text-lg text-white/80 max-w-[550px] mb-8">
-                Building modern, scalable web applications with React, JavaScript, and cutting-edge technologies. Transforming ideas into exceptional digital experiences.
-              </p>
+            <FadeIn delay={120}>
+              <div className="flex items-center gap-4 mb-4">
+                <Lock className="w-6 h-6 text-green-400" />
+                <span className="text-green-200 text-lg font-mono tracking-wide">"Securing the digital world, one network at a time."</span>
+                <Network className="w-6 h-6 text-green-400" />
+              </div>
             </FadeIn>
             <FadeIn delay={300}>
               <button
@@ -71,30 +85,24 @@ const Hero = () => {
           {/* Right Column - Image */}
           <FadeIn delay={200}>
             <div className="relative flex flex-col items-center">
-              <div className="relative overflow-hidden rounded-3xl aspect-[4/5] max-w-[400px] ml-auto border-4 border-green-400/30 shadow-lg">
+              <div className="relative overflow-hidden rounded-full w-80 h-80 border-2 border-green-400 shadow-xl bg-black/80" style={{ boxShadow: '0 0 32px 4px #8DFF69, 0 0 64px 8px #19391a' }}>
                 <img
                   src="/gethmi.jpg"
                   alt="Developer at work"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
               </div>
               {/* Technology Logos*/}
-              <div className="flex items-center gap-4 bg-black/60 backdrop-blur-sm border border-green-400/20 rounded-full px-6 py-3 mt-8">
-                <div className="w-7 h-7 flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                  <SiReact className="w-full h-full text-green-300"/>
-                </div>
-                <div className="w-7 h-7 flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                  <SiNextdotjs className="w-full h-full text-green-300"/>
-                </div>
-                <div className="w-7 h-7 flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                  <SiNodedotjs className="w-full h-full text-green-300"/>
-                </div>
-                <div className="w-7 h-7 flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                  <SiTailwindcss className="w-full h-full text-green-300"/>
-                </div>
-                <div className="w-7 h-7 flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                  <SiMongodb className="w-full h-full text-green-300"/>
-                </div>
+              <div className="flex items-center gap-12 bg-black/60 backdrop-blur-sm border border-green-400/20 rounded-full px-6 py-3 mt-8">
+                <a href="https://github.com/goagoonewardena" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="w-7 h-7 flex items-center justify-center hover:scale-110 transition-transform duration-300 text-green-300">
+                  <Github className="w-full h-full" />
+                </a>
+                <a href="https://www.linkedin.com/in/oshadhi-goonewardena" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-7 h-7 flex items-center justify-center hover:scale-110 transition-transform duration-300 text-green-300">
+                  <Linkedin className="w-full h-full" />
+                </a>
+                <a href="mailto:oshadhigoon@gmail.com" aria-label="Email" className="w-7 h-7 flex items-center justify-center hover:scale-110 transition-transform duration-300 text-green-300">
+                  <Mail className="w-full h-full" />
+                </a>
               </div>
             </div>
           </FadeIn>

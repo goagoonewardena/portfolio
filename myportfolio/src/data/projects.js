@@ -29,6 +29,16 @@ export const projects = [
     metrics: "Processed 1000+ traffic records from CSV datasets.",
     githubUrl: "https://github.com/goagoonewardena/Traffic-Data-Analysis",
   },
+  {
+    id: 4,
+    title: "Eco-Energy",
+    description: "A platform for monitoring and optimizing renewable energy usage, providing real-time analytics and sustainability insights.",
+    image: "/images/projects/eco-energy.png",
+    category: "Full Stack",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    metrics: "Enabled 200+ users to track energy savings.",
+    githubUrl: "https://github.com/goagoonewardena/Eco-Energy-web",
+  },
 ];
 
 export const categories = ['All', 'Full Stack', 'Data Analysis'];
