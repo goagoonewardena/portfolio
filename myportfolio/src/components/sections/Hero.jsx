@@ -9,9 +9,10 @@ import AnimatedCounter from '../ui/AnimatedCounter';
 import { useState, useEffect } from 'react';
 
 const TYPING_WORDS = [
+  'Welcome to my portfolio',
+  "I'm a...",
   'Computer Science Undergraduate',
   'Cybersecurity Enthusiast',
-  'Web Development Expert',
 ];
 
 const useTypewriter = (words, typingSpeed = 70, deletingSpeed = 40, pauseMs = 1800) => {
@@ -161,19 +162,20 @@ const Hero = () => {
                   />
                 </div>
               </div>
-              {/* Social Icons - Centered under image */}
-              <div className="flex justify-center w-full">
-                <div className="flex items-center justify-center gap-12 bg-black/60 backdrop-blur-sm border border-green-400/20 rounded-full px-8 py-4 mt-6 shadow-lg max-w-[520px]">
-                  <a href="https://github.com/goagoonewardena" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="w-8 h-8 flex items-center justify-center hover:scale-110 transition-transform duration-300 text-green-300">
-                    <Github className="w-full h-full" />
-                  </a>
-                  <a href="https://www.linkedin.com/in/oshadhi-goonewardena" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-8 h-8 flex items-center justify-center hover:scale-110 transition-transform duration-300 text-green-300">
-                    <Linkedin className="w-full h-full" />
-                  </a>
-                  <a href="mailto:oshadhigoon@gmail.com" aria-label="Email" className="w-8 h-8 flex items-center justify-center hover:scale-110 transition-transform duration-300 text-green-300">
-                    <Mail className="w-full h-full" />
-                  </a>
-                </div>
+              {/* Social Icons - Separate cards under image */}
+              <div className="flex justify-center gap-4 w-full mt-6">
+                <a href="https://github.com/goagoonewardena" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+                  className="w-14 h-14 flex items-center justify-center rounded-xl bg-black/60 backdrop-blur-sm border border-green-400/20 text-green-300 hover:border-green-400/60 hover:text-green-300 hover:shadow-[0_0_14px_#8DFF6944] hover:scale-110 transition-all duration-300">
+                  <Github className="w-7 h-7" />
+                </a>
+                <a href="https://www.linkedin.com/in/oshadhi-goonewardena" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
+                  className="w-14 h-14 flex items-center justify-center rounded-xl bg-black/60 backdrop-blur-sm border border-green-400/20 text-green-300 hover:border-green-400/60 hover:text-green-300 hover:shadow-[0_0_14px_#8DFF6944] hover:scale-110 transition-all duration-300">
+                  <Linkedin className="w-7 h-7" />
+                </a>
+                <a href="mailto:oshadhigoon@gmail.com" aria-label="Email"
+                  className="w-14 h-14 flex items-center justify-center rounded-xl bg-black/60 backdrop-blur-sm border border-green-400/20 text-green-300 hover:border-green-400/60 hover:text-green-300 hover:shadow-[0_0_14px_#8DFF6944] hover:scale-110 transition-all duration-300">
+                  <Mail className="w-7 h-7" />
+                </a>
               </div>
             </div>
           </FadeIn>

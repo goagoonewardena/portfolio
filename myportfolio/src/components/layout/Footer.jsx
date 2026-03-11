@@ -29,7 +29,7 @@ const Footer = () => {
               <path d="M7.75 17V10.75M7.75 7.75V7.76M12 17V13.25C12 12.0074 13.0074 11 14.25 11C15.4926 11 16.5 12.0074 16.5 13.25V17M9.5 7.75C9.5 8.44036 8.94036 9 8.25 9C7.55964 9 7 8.44036 7 7.75C7 7.05964 7.55964 6.5 8.25 6.5C8.94036 6.5 9.5 7.05964 9.5 7.75Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </a>
-          <a href="mailto:your.email@example.com" aria-label="Email" className="hover:text-emerald-400 transition-colors">
+          <a href="mailto:oshadhigoon@gmail.com" aria-label="Email" className="hover:text-emerald-400 transition-colors">
             {/* Email outlined icon */}
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-7 h-7">
               <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" strokeWidth="1.5" fill="none"/>
