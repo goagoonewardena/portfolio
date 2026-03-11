@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     title: "Career Pilot",
-    description: "Full-stack career guidance AI-powered platform with \personalized career guidance, job role predictions and career resources.",
+    description: "Full-stack career guidance AI-powered platform with personalized career guidance, job role predictions and career resources.",
     image: "/images/projects/CareerPilot.png",
     category: "Full Stack",
     technologies: ["React", "Tailwind CSS", "Node.js", "MongoDB", "Ballerina", "Python", "Auth0"],

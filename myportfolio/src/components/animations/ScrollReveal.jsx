@@ -1,13 +1,13 @@
 import React from 'react';
-import {} from '../../hooks/useScrollReveal';
+import { useScrollReveal } from '../../hooks/useScrollReveal';
 
-const ScrollReveal = (
+const ScrollReveal = ({
   children,
   animation = 'fadeUp',
   delay=0,
   duration=700
-) => {
-  const { ref, isVisible } = useScrollReveal({ threshold: 0.1 });
+}) => {
+  const [ref, isVisible] = useScrollReveal({ threshold: 0.1 });
   const animationClasses = {
     fadeUp: 'opacity-0 translate-y-8',
     fadeIn: 'opacity-0',
