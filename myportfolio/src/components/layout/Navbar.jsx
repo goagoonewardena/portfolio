@@ -33,13 +33,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className='flex items-center gap-3'>
-            <Code className='w-7 h-7 text-primary' />
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-              className="text-2xl font-bold text-primary tracking-wide hover:opacity-80 transition-opacity "
+              className="text-2xl font-bold text-primary tracking-wide hover:opacity-80 transition-opacity font-mono"
               aria-label="home"
             >
-              {PERSONAL_INFO.name.split(' ')[0]}
+              &lt;OG&gt;
             </button>
           </div>
           {/* Desktop Navigation */}

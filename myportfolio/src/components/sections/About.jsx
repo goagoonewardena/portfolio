@@ -5,7 +5,7 @@ import AnimatedProgressBar from '../ui/AnimatedProgressBar';
 
 const About = () => {
     return (
-        <section id="about" className="py-20 bg-black">
+        <section id="about" className="py-20 bg-transparent">
             <div className="max-w-4xl mx-auto px-4">
                 <FadeIn delay={0}>
                     <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">About Me</h2>

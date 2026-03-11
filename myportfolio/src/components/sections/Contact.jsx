@@ -4,7 +4,7 @@ import { PERSONAL_INFO, SOCIAL_LINKS } from '../../utils/constants';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-24 bg-black">
+    <section id="contact" className="py-24 bg-transparent">
       <div className="max-w-3xl mx-auto px-4 text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Contact Me</h2>
         <p className="text-lg text-white/80 mb-10">

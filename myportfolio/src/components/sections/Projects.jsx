@@ -4,7 +4,7 @@ import FadeIn from '../animations/FadeIn';
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 bg-black">
+    <section id="projects" className="py-20 bg-transparent">
       <div className="max-w-5xl mx-auto px-4">
         <FadeIn delay={0}>
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">Projects</h2>

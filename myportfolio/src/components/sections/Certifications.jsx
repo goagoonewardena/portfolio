@@ -49,7 +49,7 @@ const certifications = [
 
 const Certifications = () => {
   return (
-    <section id="certifications" className="py-20 bg-black">
+    <section id="certifications" className="py-20 bg-transparent">
       <div className="max-w-5xl mx-auto px-4">
         <FadeIn delay={0}>
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">Certifications</h2>

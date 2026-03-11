@@ -6,8 +6,44 @@ import { scrollToSection } from '../../hooks/useScrollSpy';
 import FadeIn from '../animations/FadeIn';
 import RadialGradientBackground from '../backgrounds/RadialGradientBackground';
 import AnimatedCounter from '../ui/AnimatedCounter';
+import { useState, useEffect } from 'react';
+
+const TYPING_WORDS = [
+  'Computer Science Undergraduate',
+  'Cybersecurity Enthusiast',
+  'Web Development Expert',
+];
+
+const useTypewriter = (words, typingSpeed = 70, deletingSpeed = 40, pauseMs = 1800) => {
+  const [displayed, setDisplayed] = useState('');
+  const [wordIndex, setWordIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const current = words[wordIndex];
+    const timeout = setTimeout(() => {
+      if (!isDeleting) {
+        setDisplayed(current.slice(0, displayed.length + 1));
+        if (displayed.length + 1 === current.length) {
+          setTimeout(() => setIsDeleting(true), pauseMs);
+        }
+      } else {
+        setDisplayed(current.slice(0, displayed.length - 1));
+        if (displayed.length - 1 === 0) {
+          setIsDeleting(false);
+          setWordIndex((prev) => (prev + 1) % words.length);
+        }
+      }
+    }, isDeleting ? deletingSpeed : typingSpeed);
+    return () => clearTimeout(timeout);
+  }, [displayed, isDeleting, wordIndex, words, typingSpeed, deletingSpeed, pauseMs]);
+
+  return displayed;
+};
 
 const Hero = () => {
+  const typedText = useTypewriter(TYPING_WORDS);
+
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-black">
       {/* Security-themed background: green radial + network grid overlay */}
@@ -15,16 +51,34 @@ const Hero = () => {
         <div className="absolute -top-32 -left-32 w-[600px] h-[600px] bg-green-400/10 rounded-full blur-3xl" />
         <div className="absolute top-1/2 left-1/2 w-[700px] h-[700px] bg-green-400/20 rounded-full blur-2xl -translate-x-1/2 -translate-y-1/2" />
         <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-green-400/10 rounded-full blur-2xl" />
-        {/* Subtle network/circuit grid overlay */}
-        <svg className="absolute inset-0 w-full h-full opacity-10" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g stroke="#8DFF69" strokeWidth="0.5">
-            {Array.from({length: 20}).map((_,i) => (
-              <line key={i} x1={i*72} y1="0" x2={i*72} y2="900" />
-            ))}
-            {Array.from({length: 12}).map((_,i) => (
-              <line key={i+20} x1="0" y1={i*75} x2="1440" y2={i*75} />
-            ))}
+        {/* Radar / network scanner overlay */}
+        <svg className="absolute inset-0 w-full h-full" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+          {/* Concentric radar rings centered bottom-right */}
+          <g stroke="#8DFF69" strokeWidth="0.6" opacity="0.12">
+            <circle cx="1200" cy="700" r="150" />
+            <circle cx="1200" cy="700" r="300" />
+            <circle cx="1200" cy="700" r="450" />
+            <circle cx="1200" cy="700" r="600" />
+            <circle cx="1200" cy="700" r="750" />
+            <circle cx="1200" cy="700" r="900" />
           </g>
+          {/* Radial scan lines */}
+          <g stroke="#8DFF69" strokeWidth="0.5" opacity="0.08">
+            <line x1="1200" y1="700" x2="1200" y2="-200" />
+            <line x1="1200" y1="700" x2="2000" y2="700" />
+            <line x1="1200" y1="700" x2="500"  y2="-100" />
+            <line x1="1200" y1="700" x2="-100" y2="200" />
+            <line x1="1200" y1="700" x2="400"  y2="1400" />
+          </g>
+          {/* Blip dots — detected "hosts" on radar */}
+          <circle cx="980"  cy="310" r="3" fill="#8DFF69" opacity="0.55" />
+          <circle cx="750"  cy="480" r="2.5" fill="#8DFF69" opacity="0.4" />
+          <circle cx="1050" cy="180" r="2" fill="#8DFF69" opacity="0.35" />
+          <circle cx="580"  cy="560" r="2.5" fill="#8DFF69" opacity="0.4" />
+          <circle cx="870"  cy="620" r="2" fill="#8DFF69" opacity="0.3" />
+          <circle cx="1280" cy="250" r="2" fill="#8DFF69" opacity="0.3" />
+          {/* Sweep gradient arc (faint) */}
+          <path d="M1200 700 L1200 100 A600 600 0 0 1 1724 475 Z" fill="#8DFF69" opacity="0.02" />
         </svg>
       </div>
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">
@@ -32,17 +86,21 @@ const Hero = () => {
           {/* Left Column - Content */}
           <div className="text-left mt-10 md:mt-16">
             <FadeIn delay={0}>
-              <div className="inline-flex items-center gap-2.5 px-6 py-2 mb-8 bg-green-400/10 border border-green-400/30 rounded-full">
-                <Star className="w-4 h-4 text-green-300 fill-green-300"/>
-                <span className="text-xs md:text-sm text-green-200 tracking-[1.2px]">
-                  Network Security Intern | Cybersecurity Enthusiast
+              <div className="relative inline-flex items-center bg-black/50 border border-green-400/30 rounded px-4 py-2 mb-8 overflow-hidden max-w-full">
+                {/* scanline sweep */}
+                <div className="scanline-sweep" />
+                {/* typed text */}
+                <span className="text-base md:text-lg font-mono text-green-300 tracking-wide neon-text">
+                  {typedText}
                 </span>
+                {/* block cursor */}
+                <span className="block-cursor text-base md:text-lg">█</span>
               </div>
             </FadeIn>
             <FadeIn delay={100}>
-              <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight flex items-center gap-4 flex-wrap">
-                <ShieldCheck className="w-12 h-12 text-green-300 inline-block" />
-                Network Security Intern<br />Portfolio
+              <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                <span className="text-green-300">Hi, I'm</span><br />
+                Oshadhi<br />Goonewardena
               </h1>
             </FadeIn>
             <FadeIn delay={120}>
@@ -124,7 +182,7 @@ const Hero = () => {
       {/* Scroll Indicator */}
       <button
         onClick={() => scrollToSection('about')}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce z-20"
       >
         <ChevronDown className="w-8 h-8 text-green-300"/>
       </button>
