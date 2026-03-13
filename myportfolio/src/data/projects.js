@@ -39,6 +39,16 @@ export const projects = [
     metrics: "Enabled 200+ users to track energy savings.",
     githubUrl: "https://github.com/goagoonewardena/Eco-Energy-web",
   },
+  {
+    id: 5,
+    title: "Networking-Labs",
+    description: "A collection of hands-on networking lab exercises covering core concepts such as routing, switching, subnetting, and network protocols.",
+    image: "/images/projects/cisco.png",
+    category: "Networking",
+    technologies: ["Cisco Packet Tracer"],
+    metrics: "20+ lab scenarios implemented across multiple network topologies.",
+    githubUrl: "https://github.com/goagoonewardena/Networking-Labs",
+  },
 ];
 
-export const categories = ['All', 'Full Stack', 'Data Analysis'];
+export const categories = ['All', 'Full Stack', 'Data Analysis', 'Networking'];
