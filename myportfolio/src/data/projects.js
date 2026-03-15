@@ -46,8 +46,8 @@ export const projects = [
     image: "/images/projects/cisco.png",
     category: "Networking",
     technologies: ["Cisco Packet Tracer"],
-    metrics: "20+ lab scenarios implemented across multiple network topologies.",
-    githubUrl: "https://github.com/goagoonewardena/Networking-Labs",
+    metrics: "10+ lab scenarios implemented across multiple network topologies.",
+    githubUrl: "https://github.com/goagoonewardena/Networking_Labs",
   },
 ];
 
