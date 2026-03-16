@@ -1,6 +1,16 @@
 export const projects = [
   {
     id: 1,
+    title: "Networking-Labs",
+    description: "A collection of hands-on networking lab exercises covering core concepts such as routing, switching, subnetting, and network protocols.",
+    image: "/images/projects/cisco.png",
+    category: "Networking",
+    technologies: ["Cisco Packet Tracer"],
+    metrics: "10+ lab scenarios implemented across multiple network topologies.",
+    githubUrl: "https://github.com/goagoonewardena/Networking_Labs",
+  },
+  {
+    id: 2,
     title: "Career Pilot",
     description: "Full-stack career guidance AI-powered platform with personalized career guidance, job role predictions and career resources.",
     image: "/images/projects/CareerPilot.png",
@@ -10,7 +20,7 @@ export const projects = [
     githubUrl: "https://github.com/sigallage/iwb25-120-thestackmasters",
   },
   {
-    id: 2,
+    id: 3,
     title: "Ceylon Roam",
     description: "Full-stack travel planning AI mobile application with Route Optimizer, Itinerary Generator and real-time voice translation",
     image: "/images/projects/Ceylon_Roam.jpeg",
@@ -20,7 +30,7 @@ export const projects = [
     githubUrl: "https://github.com/sigallage/CeylonRoam",
   },
   {
-    id: 3,
+    id: 4,
     title: "Traffic-Analysis System",
     description: "Traffic analysis System with real-time data processing, visualization, and reporting.",
     image: "/images/projects/Traffic.jpg",
@@ -30,7 +40,7 @@ export const projects = [
     githubUrl: "https://github.com/goagoonewardena/Traffic-Data-Analysis",
   },
   {
-    id: 4,
+    id: 5,
     title: "Eco-Energy",
     description: "A platform for monitoring and optimizing renewable energy usage, providing real-time analytics and sustainability insights.",
     image: "/images/projects/Eco_Energy.jpg",
@@ -38,16 +48,6 @@ export const projects = [
     technologies: ["HTML", "CSS", "JavaScript"],
     metrics: "Enabled 200+ users to track energy savings.",
     githubUrl: "https://github.com/goagoonewardena/Eco-Energy-web",
-  },
-  {
-    id: 5,
-    title: "Networking-Labs",
-    description: "A collection of hands-on networking lab exercises covering core concepts such as routing, switching, subnetting, and network protocols.",
-    image: "/images/projects/cisco.png",
-    category: "Networking",
-    technologies: ["Cisco Packet Tracer"],
-    metrics: "10+ lab scenarios implemented across multiple network topologies.",
-    githubUrl: "https://github.com/goagoonewardena/Networking_Labs",
   },
 ];
 

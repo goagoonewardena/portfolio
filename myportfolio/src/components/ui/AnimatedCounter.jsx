@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-const AnimatedCounter = ({ end, duration = 1200, suffix = '', className = '' }) => {
+const AnimatedCounter = ({ end, duration = 700, suffix = '', className = '' }) => {
   const [count, setCount] = useState(0);
   const ref = useRef();
   const hasAnimated = useRef(false);
