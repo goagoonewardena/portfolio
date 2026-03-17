@@ -9,8 +9,6 @@ import AnimatedCounter from '../ui/AnimatedCounter';
 import { useState, useEffect } from 'react';
 
 const TYPING_WORDS = [
-  'Welcome to my portfolio',
-  "I'm a...",
   'Computer Science Undergraduate',
   'Cybersecurity Enthusiast',
 ];
