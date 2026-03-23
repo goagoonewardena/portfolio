@@ -57,16 +57,7 @@ const Navbar = () => {
               </button>
             ))}
           </nav> 
-          {/* CTA Button*/}   
-          <div className="hidden md:flex items-center gap-2">
-            <a
-              href={PERSONAL_INFO.resume}
-              download
-              className="px-7 py-2 bg-white text-black font-semibold text-base rounded-xl border border-white shadow hover:bg-primary hover:text-black transition-all duration-300"
-            >
-              Download My CV
-            </a>  
-          </div>
+          {/* CTA Button removed as requested */}
           {/* Mobile Menu Button */} 
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -94,13 +85,7 @@ const Navbar = () => {
             {link.label}
           </button>
         ))}
-        <a
-          href={PERSONAL_INFO.resume}
-          download
-          className="w-full px-7 py-3 bg-white text-black font-semibold text-base rounded-xl border border-white shadow hover:bg-primary hover:text-black transition-all duration-300 mt-2"
-        >
-          Download My CV
-        </a>
+        {/* Download My CV button removed as requested */}
         </div>
       </div>
     </nav>

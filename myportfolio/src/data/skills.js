@@ -41,13 +41,7 @@ export const skills = [
         level: 'Beginner',
         experience: '6+ months',
     },
-    {
-        id: 7,
-        name: 'Wireshark',
-        icon: 'Activity',
-        level: 'Beginner',
-        experience: '6+ months',
-    },
+    // Wireshark skill removed as requested
     {
         id: 8,
         name: 'Ethical Hacking',

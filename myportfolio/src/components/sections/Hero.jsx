@@ -1,7 +1,7 @@
 
 import { ChevronDown, Star, ShieldCheck, Lock, Network, Bug, Terminal, Github, Linkedin, Mail } from 'lucide-react';
 import { SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, SiMongodb } from 'react-icons/si';
-import { PERSONAL_INFO, STATS } from '../../utils/constants';
+import { PERSONAL_INFO } from '../../utils/constants';
 import { scrollToSection } from '../../hooks/useScrollSpy';
 import FadeIn from '../animations/FadeIn';
 import RadialGradientBackground from '../backgrounds/RadialGradientBackground';
@@ -109,26 +109,15 @@ const Hero = () => {
                 <Network className="w-6 h-6 text-green-400" />
               </div>
             </FadeIn>
-            <FadeIn delay={300}>
-              <div className="mt-8 grid grid-cols-1 sm:grid-cols-3 gap-12 mb-12 max-w-2xl">
-                <div className="text-center">
-                  <div className="text-3xl font-extrabold" style={{ color: '#8DFF69' }}>
-                    <AnimatedCounter end={200} duration={2200} suffix="+" />
-                  </div>
-                  <div className="text-lg text-white font-semibold">Code Commits</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-extrabold" style={{ color: '#8DFF69' }}>
-                    <AnimatedCounter end={5} duration={1800} suffix="+" />
-                  </div>
-                  <div className="text-lg text-white font-semibold">Projects Completed</div>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-extrabold" style={{ color: '#8DFF69' }}>
-                    <AnimatedCounter end={15} duration={1800} suffix="+" />
-                  </div>
-                  <div className="text-lg text-white font-semibold">Technologies</div>
-                </div>
+            <FadeIn delay={350}>
+              <div className="mt-8 mb-12">
+                <a
+                  href={PERSONAL_INFO.resume}
+                  download
+                  className="inline-block px-8 py-3 bg-green-400 text-black font-semibold rounded-lg shadow hover:bg-green-300 transition-colors duration-200 text-lg"
+                >
+                  Download My CV
+                </a>
               </div>
             </FadeIn>
             {/* Stats removed as requested */}

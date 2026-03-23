@@ -4,7 +4,7 @@ export const PERSONAL_INFO = {
 	email: 'oshadhigoon@gmail.com',
 	location: 'Colombo, Sri Lanka',
 	tagLine: 'Passionate about securing networks and defending digital frontiers.',
-	resume: '/Oshadhi_CV (2).pdf',
+	resume: '/Oshadhi_Goonewardena_Resume.pdf',
 	bio: [
 		"I'm Oshadhi Goonewardena, a dedicated cybersecurity enthusiast with foundational knowledge of network security concepts and a strong interest in threat analysis. Eager to gain hands-on experience in identifying vulnerabilities, learning security tools, and understanding incident response processes while contributing to organizational security awareness."
 	],
