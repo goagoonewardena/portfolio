@@ -18,37 +18,40 @@ const About = () => {
                     </div>
                 </FadeIn>
                                 <FadeIn delay={200}>
-                                    <div className="flex flex-row gap-10 mb-6 justify-between items-start mt-16">
+                                    <div className="flex flex-col gap-8 mb-6 items-center mt-16">
                                         {/* Education Card 1 */}
-                                        <div className="bg-black/70 border border-green-400/40 rounded-3xl p-6 shadow-[0_0_24px_2px_#8DFF69] h-[260px] w-[320px] flex flex-col justify-between">
-                                            <div className="mb-2">
+                                        <div className="bg-black/70 border border-green-400/40 rounded-[2.5rem] p-6 shadow-[0_0_24px_2px_#8DFF69] h-[260px] w-full max-w-2xl flex flex-col items-start justify-center transition-all duration-300 hover:shadow-[0_0_36px_4px_#8DFF69] hover:border-green-400">
+                                            <div className="mb-6">
                                                 <div className="text-lg font-semibold text-white">Informatics Institute of Technology</div>
                                                 <div className="text-base text-white/80">BSc (Hons) in Computer Science</div>
                                                 <div className="text-sm text-white/60 mt-1">2024 - Present</div>
                                             </div>
-                                            {/* Animated Progress Bar */}
-                                            <AnimatedProgressBar percent={70} duration={1200} />
+                                            <div className="w-full flex-1 flex items-center">
+                                                <AnimatedProgressBar percent={70} duration={1200} />
+                                            </div>
                                         </div>
                                         {/* Education Card 2 */}
-                                        <div className="bg-black/70 border border-green-400/40 rounded-3xl p-6 shadow-[0_0_24px_2px_#8DFF69] h-[260px] w-[320px] flex flex-col justify-between">
-                                            <div className="mb-2">
+                                        <div className="bg-black/70 border border-green-400/40 rounded-[2.5rem] p-6 shadow-[0_0_24px_2px_#8DFF69] h-[260px] w-full max-w-2xl flex flex-col items-start justify-center transition-all duration-300 hover:shadow-[0_0_36px_4px_#8DFF69] hover:border-green-400">
+                                            <div className="mb-6">
                                                 <div className="text-lg font-semibold text-white">St. Bridget's Convent</div>
                                                 <div className="text-base text-white/80">A/L's Biological Science Stream</div>
                                                 <div className="text-sm text-white/60 mt-1">2009 - 2022</div>
                                             </div>
-                                            {/* Animated Progress Bar */}
-                                            <AnimatedProgressBar percent={100} duration={1200} />
+                                            <div className="w-full flex-1 flex items-center">
+                                                <AnimatedProgressBar percent={100} duration={1200} />
+                                            </div>
                                         </div>
-                                           {/* Education Card 3 */}
-                                           <div className="bg-black/70 border border-green-400/40 rounded-3xl p-6 shadow-[0_0_24px_2px_#8DFF69] h-[260px] w-[320px] flex flex-col justify-between">
-                                               <div className="mb-2">
-                                                   <div className="text-lg font-semibold text-white">Esoft Metro Campus</div>
-                                                   <div className="text-base text-white/80">Diploma in Information Technology</div>
-                                                   <div className="text-sm text-white/60 mt-1">2024 - 2025</div>
-                                               </div>
-                                               {/* Animated Progress Bar */}
-                                               <AnimatedProgressBar percent={100} duration={1200} />
-                                           </div>
+                                        {/* Education Card 3 */}
+                                        <div className="bg-black/70 border border-green-400/40 rounded-[2.5rem] p-6 shadow-[0_0_24px_2px_#8DFF69] h-[260px] w-full max-w-2xl flex flex-col items-start justify-center transition-all duration-300 hover:shadow-[0_0_36px_4px_#8DFF69] hover:border-green-400">
+                                            <div className="mb-6">
+                                                <div className="text-lg font-semibold text-white">Esoft Metro Campus</div>
+                                                <div className="text-base text-white/80">Diploma in Information Technology</div>
+                                                <div className="text-sm text-white/60 mt-1">2024 - 2025</div>
+                                            </div>
+                                            <div className="w-full flex-1 flex items-center">
+                                                <AnimatedProgressBar percent={100} duration={1200} />
+                                            </div>
+                                        </div>
                                     </div>
                                 </FadeIn>
                 {/* Stats removed as requested */}
