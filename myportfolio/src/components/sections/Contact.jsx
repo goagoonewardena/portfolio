@@ -8,8 +8,8 @@ const Contact = () => {
       <div className="max-w-3xl mx-auto px-4 text-center">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Contact Me</h2>
         <p className="text-lg text-white/80 mb-10">
-          I am currently looking for new opportunities.<br />
-          Feel free to reach out if you’d like to discuss working together.
+          I am currently looking for QA and cybersecurity internship or junior opportunities.<br />
+          Feel free to reach out if you would like to discuss roles, collaborations, or projects.
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-8">
           {/* Email Button */}

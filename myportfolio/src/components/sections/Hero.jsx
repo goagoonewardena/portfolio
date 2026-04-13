@@ -1,7 +1,6 @@
 
 import { ChevronDown, Star, ShieldCheck, Lock, Network, Bug, Terminal, Github, Linkedin, Mail } from 'lucide-react';
 import { SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, SiMongodb } from 'react-icons/si';
-import { PERSONAL_INFO } from '../../utils/constants';
 import { scrollToSection } from '../../hooks/useScrollSpy';
 import FadeIn from '../animations/FadeIn';
 import RadialGradientBackground from '../backgrounds/RadialGradientBackground';
@@ -9,8 +8,9 @@ import AnimatedCounter from '../ui/AnimatedCounter';
 import { useState, useEffect } from 'react';
 
 const TYPING_WORDS = [
-  'Computer Science Undergraduate',
+  'QA-Focused Computer Science Undergraduate',
   'Cybersecurity Enthusiast',
+  'Software Quality & Security Tester',
 ];
 
 const useTypewriter = (words, typingSpeed = 70, deletingSpeed = 40, pauseMs = 1800) => {
@@ -105,19 +105,8 @@ const Hero = () => {
             <FadeIn delay={120}>
               <div className="flex items-center gap-4 mb-4">
                 <Lock className="w-6 h-6 text-green-400" />
-                <span className="text-green-200 text-lg font-mono tracking-wide">"Securing the digital world, one network at a time."</span>
+                <span className="text-green-200 text-lg font-mono tracking-wide">"Testing for quality. Defending with security."</span>
                 <Network className="w-6 h-6 text-green-400" />
-              </div>
-            </FadeIn>
-            <FadeIn delay={350}>
-              <div className="mt-8 mb-12">
-                <a
-                  href={PERSONAL_INFO.resume}
-                  download
-                  className="inline-block px-8 py-3 bg-green-400 text-black font-semibold rounded-lg shadow hover:bg-green-300 transition-colors duration-200 text-lg"
-                >
-                  Download My CV
-                </a>
               </div>
             </FadeIn>
             {/* Stats removed as requested */}
