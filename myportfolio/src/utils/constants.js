@@ -6,8 +6,8 @@ export const PERSONAL_INFO = {
 	tagLine: 'Focused on software quality, test automation, and practical cyber defense.',
 	resume: '/Oshadhi_Goonewardena_Resume.pdf',
 	bio: [
-		"I am Oshadhi Goonewardena, a Computer Science undergraduate building a career at the intersection of Quality Assurance and Cybersecurity.",
-		"I enjoy breaking down requirements into clear test scenarios, reporting defects with actionable detail, and applying secure coding and security testing practices to improve product reliability."
+		"I am Oshadhi Goonewardena, a Computer Science undergraduate passionate about building a career in Cybersecurity.",
+		"I enjoy analyzing systems for vulnerabilities, applying secure coding and security testing practices, and defending digital assets to improve product reliability."
 	],
 };
 

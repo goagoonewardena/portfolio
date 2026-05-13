@@ -1,9 +1,9 @@
 import React from 'react';
 import { skills } from '../../data/skills';
 import FadeIn from '../animations/FadeIn';
-import { Shield, Bug, FileCode, Terminal, Search, AlertCircle, Activity, UserCheck, Code2, Palette, Server, GitBranch } from 'lucide-react';
+import { Shield, Bug, FileCode, Terminal, Search, AlertCircle, Activity, UserCheck, Code2, Palette, Server, GitBranch, Zap, Globe } from 'lucide-react';
 
-const ICON_MAP = { Shield, Bug, FileCode, Terminal, Search, AlertCircle, Activity, UserCheck, Code2, Palette, Server, GitBranch };
+const ICON_MAP = { Shield, Bug, FileCode, Terminal, Search, AlertCircle, Activity, UserCheck, Code2, Palette, Server, GitBranch, Zap, Globe };
 const LEVEL_WIDTH = { Beginner: '35%', Intermediate: '65%', Expert: '92%' };
 const LEVEL_COLOR = { Beginner: 'text-yellow-400', Intermediate: 'text-green-300', Expert: 'text-green-400' };
 

@@ -1,13 +1,13 @@
 export const projects = [
   {
     id: 1,
-    title: "SchoolSprint",
-    description: "A school management platform focused on academic workflows, where I contributed with QA-driven validation of student, teacher, and class management features.",
-    image: "/images/projects/schoolsprint_image.png",
-    category: "Full Stack",
-    technologies: ["React", "Node.js", "MongoDB", "JavaScript"],
-    metrics: "Tested core CRUD flows and role-based scenarios to improve functional stability.",
-    githubUrl: "https://github.com/goagoonewardena/SchoolSprint",
+    title: "Networking-Labs",
+    description: "A collection of hands-on networking labs focused on validating routing, switching, and subnetting behavior while strengthening secure network configuration skills.",
+    image: "/images/projects/cisco.png",
+    category: "Networking",
+    technologies: ["Cisco Packet Tracer"],
+    metrics: "Completed 10+ test-driven lab scenarios across multiple network topologies.",
+    githubUrl: "https://github.com/goagoonewardena/Networking_Labs",
   },
   {
     id: 2,
@@ -51,13 +51,13 @@ export const projects = [
   },
   {
     id: 6,
-    title: "Networking-Labs",
-    description: "A collection of hands-on networking labs focused on validating routing, switching, and subnetting behavior while strengthening secure network configuration skills.",
-    image: "/images/projects/cisco.png",
-    category: "Networking",
-    technologies: ["Cisco Packet Tracer"],
-    metrics: "Completed 10+ test-driven lab scenarios across multiple network topologies.",
-    githubUrl: "https://github.com/goagoonewardena/Networking_Labs",
+    title: "SchoolSprint",
+    description: "A school management platform focused on academic workflows, where I contributed with QA-driven validation of student, teacher, and class management features.",
+    image: "/images/projects/schoolsprint_image.png",
+    category: "Full Stack",
+    technologies: ["React", "Node.js", "MongoDB", "JavaScript"],
+    metrics: "Tested core CRUD flows and role-based scenarios to improve functional stability.",
+    githubUrl: "https://github.com/goagoonewardena/SchoolSprint",
     
   },
 ];

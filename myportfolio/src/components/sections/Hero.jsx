@@ -8,9 +8,8 @@ import AnimatedCounter from '../ui/AnimatedCounter';
 import { useState, useEffect } from 'react';
 
 const TYPING_WORDS = [
-  'QA-Focused Computer Science Undergraduate',
+  'Computer Science Undergraduate',
   'Cybersecurity Enthusiast',
-  'Software Quality & Security Tester',
 ];
 
 const useTypewriter = (words, typingSpeed = 70, deletingSpeed = 40, pauseMs = 1800) => {
@@ -105,7 +104,7 @@ const Hero = () => {
             <FadeIn delay={120}>
               <div className="flex items-center gap-4 mb-4">
                 <Lock className="w-6 h-6 text-green-400" />
-                <span className="text-green-200 text-lg font-mono tracking-wide">"Testing for quality. Defending with security."</span>
+                <span className="text-green-200 text-lg font-mono tracking-wide">"Defending the digital world. Empowering cybersecurity."</span>
                 <Network className="w-6 h-6 text-green-400" />
               </div>
             </FadeIn>
