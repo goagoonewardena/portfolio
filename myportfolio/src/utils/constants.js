@@ -1,13 +1,13 @@
 export const PERSONAL_INFO = {
 	name: 'Oshadhi Goonewardena',
-	title: 'QA & Cybersecurity-Focused Computer Science Undergraduate',
+	title: 'Cybersecurity, Cloud & DevOps Learner',
 	email: 'oshadhigoon@gmail.com',
 	location: 'Colombo, Sri Lanka',
-	tagLine: 'Focused on software quality, test automation, and practical cyber defense.',
+	tagLine: 'Building secure, reliable systems with a growing focus on cloud and DevOps.',
 	resume: '/Oshadhi_Goonewardena_Resume.pdf',
 	bio: [
-		"I am Oshadhi Goonewardena, a Computer Science undergraduate passionate about building a career in Cybersecurity.",
-		"I enjoy analyzing systems for vulnerabilities, applying secure coding and security testing practices, and defending digital assets to improve product reliability."
+		"I am Oshadhi Goonewardena, a Computer Science undergraduate passionate about cybersecurity, cloud, and DevOps.",
+		"I enjoy analyzing systems for vulnerabilities, applying secure coding and security testing practices, and learning cloud deployment and automation to build reliable digital products."
 	],
 };
 

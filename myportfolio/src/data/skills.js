@@ -53,17 +53,38 @@ export const skills = [
     },
     {
         id: 8,
-        name: 'Web Application Security',
+        name: 'OWASP Top 10',
         icon: 'Globe',
         level: 'Intermediate',
         experience: '6+ months',
     },
+    // Cloud & DevOps Skills
     {
         id: 9,
-        name: 'Wireshark',
-        icon: 'Activity',
+        name: 'AWS',
+        icon: 'Cloud',
         level: 'Beginner',
-        experience: '3+ months',
+        experience: 'Learning - hands-on labs',
     },
-
+    {
+        id: 10,
+        name: 'Docker',
+        icon: 'Box',
+        level: 'Beginner',
+        experience: 'Learning - containerizing apps',
+    },
+    {
+        id: 11,
+        name: 'Kubernetes',
+        icon: 'Server',
+        level: 'Beginner',
+        experience: 'Learning - orchestration basics',
+    },
+    {
+        id: 12,
+        name: 'Bash',
+        icon: 'Terminal',
+        level: 'Beginner',
+        experience: 'Scripting and command-line automation',
+    },
 ];

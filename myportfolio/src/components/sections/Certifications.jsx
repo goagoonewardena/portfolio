@@ -52,6 +52,13 @@ const certifications = [
     date: '2024',
     image: '/images/certifications/python_moratuwa.jpg',
   }
+  ,{
+    id: 8,
+    title: 'Introduction to Kubernetes',
+    issuer: 'The Linux Foundation',
+    date: '2026',
+    image: '/images/certifications/kubernetes.jpg',
+  }
 ];
 
 const Certifications = () => {

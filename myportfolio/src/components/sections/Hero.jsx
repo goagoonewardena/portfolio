@@ -10,6 +10,7 @@ import { useState, useEffect } from 'react';
 const TYPING_WORDS = [
   'Computer Science Undergraduate',
   'Cybersecurity Enthusiast',
+  'Cloud and DevOps Learner',
 ];
 
 const useTypewriter = (words, typingSpeed = 70, deletingSpeed = 40, pauseMs = 1800) => {
