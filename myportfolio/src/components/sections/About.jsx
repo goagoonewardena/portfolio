@@ -35,7 +35,7 @@ const About = () => {
                                             <div className="mb-6">
                                                 <div className="text-lg font-semibold text-white">St. Bridget's Convent</div>
                                                 <div className="text-base text-white/80">A/L's Biological Science Stream</div>
-                                                <div className="text-sm text-white/60 mt-1">2009 - 2022</div>
+                                                <div className="text-sm text-white/60 mt-1">2009 - 2023</div>
                                             </div>
                                             <div className="w-full flex-1 flex items-center">
                                                 <AnimatedProgressBar percent={100} duration={1200} />

@@ -9,7 +9,7 @@ export const skills = [
     },
     {
         id: 2,
-        name: 'Next.js',
+        name: 'Node.js',
         icon: 'Globe',
         level: 'Intermediate',
         experience: 'Server-rendered apps',
