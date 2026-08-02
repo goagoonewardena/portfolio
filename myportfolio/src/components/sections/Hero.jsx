@@ -9,8 +9,10 @@ import { useState, useEffect } from 'react';
 
 const TYPING_WORDS = [
   'Computer Science Undergraduate',
-  'Cybersecurity Enthusiast',
-  'Cloud and DevOps Learner',
+  'Aspiring Software Engineer',
+  'Full Stack Developer',
+  'Cloud & DevOps Enthusiast',
+  'Machine Learning Enthusiast'
 ];
 
 const useTypewriter = (words, typingSpeed = 70, deletingSpeed = 40, pauseMs = 1800) => {
@@ -105,7 +107,7 @@ const Hero = () => {
             <FadeIn delay={120}>
               <div className="flex items-center gap-4 mb-4">
                 <Lock className="w-6 h-6 text-green-400" />
-                <span className="text-green-200 text-lg font-mono tracking-wide">"Defending the digital world. Empowering cybersecurity."</span>
+                <span className="text-green-200 text-lg font-mono tracking-wide">"Turning ideas into clean, impactful digital experiences."</span>
                 <Network className="w-6 h-6 text-green-400" />
               </div>
             </FadeIn>

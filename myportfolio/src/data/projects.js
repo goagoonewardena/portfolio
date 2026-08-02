@@ -1,16 +1,6 @@
 export const projects = [
   {
     id: 1,
-    title: "Networking-Labs",
-    description: "A collection of hands-on networking labs focused on validating routing, switching, and subnetting behavior while strengthening secure network configuration skills.",
-    image: "/images/projects/cisco.png",
-    category: "Networking",
-    technologies: ["Cisco Packet Tracer"],
-    metrics: "Completed 10+ test-driven lab scenarios across multiple network topologies.",
-    githubUrl: "https://github.com/goagoonewardena/Networking_Labs",
-  },
-  {
-    id: 2,
     title: "Career Pilot",
     description: "Full-stack career guidance platform where I contributed QA-focused validation for critical flows including authentication, role prediction, and API-driven recommendations.",
     image: "/images/projects/CareerPilot.png",
@@ -18,6 +8,16 @@ export const projects = [
     technologies: ["React", "Tailwind CSS", "Node.js", "MongoDB", "Ballerina", "Python", "Auth0"],
     metrics: "Validated core user journeys and API responses supporting 500+ personalized job predictions.",
     githubUrl: "https://github.com/sigallage/iwb25-120-thestackmasters",
+  },
+  {
+    id: 2,
+    title: "Smart Campus API",
+    description: "A RESTful JAX-RS API built with Java and Tomcat to manage campus rooms, IoT sensors, and sensor readings through structured endpoints.",
+    image: "/images/projects/Smart_Campus_API_Image.png",
+    category: "Full Stack",
+    technologies: ["Java", "SQL", "REST API", "MongoDB"],
+    metrics: "Built to support smart campus operations with rooms, sensors, and reading management endpoints.",
+    githubUrl: "https://github.com/goagoonewardena/smart-campus-api",
   },
   {
     id: 3,
@@ -62,4 +62,4 @@ export const projects = [
   },
 ];
 
-export const categories = ['All', 'Full Stack', 'Data Analysis', 'Networking'];
+export const categories = ['All', 'Full Stack', 'Data Analysis'];
