@@ -14,6 +14,7 @@ export const PERSONAL_INFO = {
 export const SOCIAL_LINKS = {
 	github: 'https://github.com/goagoonewardena',
 	linkedin: 'https://www.linkedin.com/in/oshadhi-goonewardena',
+	medium: 'https://medium.com/@oshadhigoon',
 };
 
 export const STATS = [

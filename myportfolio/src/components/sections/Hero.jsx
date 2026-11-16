@@ -1,11 +1,13 @@
 
 import { ChevronDown, Star, ShieldCheck, Lock, Network, Bug, Terminal, Github, Linkedin, Mail } from 'lucide-react';
+import { FaMedium } from 'react-icons/fa';
 import { SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs, SiMongodb } from 'react-icons/si';
 import { scrollToSection } from '../../hooks/useScrollSpy';
 import FadeIn from '../animations/FadeIn';
 import RadialGradientBackground from '../backgrounds/RadialGradientBackground';
 import AnimatedCounter from '../ui/AnimatedCounter';
 import { useState, useEffect } from 'react';
+import { SOCIAL_LINKS } from '../../utils/constants';
 
 const TYPING_WORDS = [
   'Computer Science Undergraduate',
@@ -149,6 +151,10 @@ const Hero = () => {
                 <a href="https://www.linkedin.com/in/oshadhi-goonewardena" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"
                   className="w-14 h-14 flex items-center justify-center rounded-xl bg-black/60 backdrop-blur-sm border border-green-400/20 text-green-300 hover:border-green-400/60 hover:text-green-300 hover:shadow-[0_0_14px_#8DFF6944] hover:scale-110 transition-all duration-300">
                   <Linkedin className="w-7 h-7" />
+                </a>
+                <a href={SOCIAL_LINKS.medium} target="_blank" rel="noopener noreferrer" aria-label="Medium"
+                  className="w-14 h-14 flex items-center justify-center rounded-xl bg-black/60 backdrop-blur-sm border border-green-400/20 text-green-300 hover:border-green-400/60 hover:text-green-300 hover:shadow-[0_0_14px_#8DFF6944] hover:scale-110 transition-all duration-300">
+                  <FaMedium className="w-7 h-7" />
                 </a>
                 <a href="mailto:oshadhigoon@gmail.com" aria-label="Email"
                   className="w-14 h-14 flex items-center justify-center rounded-xl bg-black/60 backdrop-blur-sm border border-green-400/20 text-green-300 hover:border-green-400/60 hover:text-green-300 hover:shadow-[0_0_14px_#8DFF6944] hover:scale-110 transition-all duration-300">
